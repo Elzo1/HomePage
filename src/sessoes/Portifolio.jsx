@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Servico1 from '../imgs/Servico1.jpg';
-import Servico2 from '../imgs/Servico2.jpg';
-import Servico3 from '../imgs/Servico3.jpg';
-import Servico4 from '../imgs/Servico4.jpg';
-import Servico5 from '../imgs/Servico5.jpg';
-import Servico6 from '../imgs/Servico6.jpg';
-import Servico7 from '../imgs/Servico7.jpg';
-import Servico8 from '../imgs/Servico8.jpg';
+import Servico1 from '../imgs/servico1.jpg';
+import Servico2 from '../imgs/servico2.jpg';
+import Servico3 from '../imgs/servico3.jpg';
+import Servico4 from '../imgs/servico4.jpg';
+import Servico5 from '../imgs/servico5.jpg';
+import Servico6 from '../imgs/servico6.jpg';
+import Servico7 from '../imgs/servico7.jpg';
+import Servico8 from '../imgs/servico8.jpg';
 
 import { motion } from "framer-motion";
 import { slideUpVariants, zoomInVariants } from "./animation";
