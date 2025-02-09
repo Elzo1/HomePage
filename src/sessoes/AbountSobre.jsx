@@ -10,7 +10,9 @@ const AbountSobre = () => {
   // Função para iniciar o vídeo
   const handlePlay = () => {
     if (videoRef.current) {
-      videoRef.current.play();
+      videoRef.current.play().catch((error) => {
+        console.error("Erro ao tentar reproduzir o vídeo:", error);
+      });
     }
   };
 
@@ -96,8 +98,9 @@ const AbountSobre = () => {
           ref={videoRef}
           className="w-full max-w-[300px] rounded-[15px] h-auto"
           controls
-          muted
+          muted // Garante que o vídeo esteja sem som
           loop // Faz o vídeo repetir automaticamente
+          playsInline // Permite a reprodução inline no iOS
         >
           <source src={videoSrc} type="video/mp4" /> {/* Use a variável importada */}
           Seu navegador não suporta vídeos.
